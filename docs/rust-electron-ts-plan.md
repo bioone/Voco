@@ -9,7 +9,7 @@
 - 原目录只有空的 `.git`，没有可继承的提交或远程配置。本轮初始化了本地 Git。
 - `legacy/electron-python`：现有源码基线，提交 `0e3fd5b`。
 - `main`：从上述基线衍生的新方案及后续 Rust 开发主分支；准备阶段名称为 `feature/rust-electron-ts`，按用户要求改名为 `main`。
-- 用户已指定远程仓库 [bioone/Voco](https://github.com/bioone/Voco)。2026-11-07 核实为空仓库，没有远程源码需要合并。本地 `origin` 已设置为 `https://github.com/bioone/Voco.git`；尚未推送。
+- 用户已指定远程仓库 [bioone/Voco](https://github.com/bioone/Voco)。2026-11-07 首次核实时为空仓库，没有远程源码需要合并。本地 `origin` 为 `https://github.com/bioone/Voco.git`；远程分支布局采用 `main` 新主线和 `legacy/electron-python` 旧版源码分支。
 - 初始基线使用仅此次提交有效的 `Codex <codex@local.invalid>` 身份；未设置用户的全局 Git 身份。
 - 旧软件包保留在 `release/win-unpacked/`，不重打包、不覆盖。模型、虚拟环境、声音库、用户输入和输出均不纳入 Git。
 - 原目录已有的 `.tmp_*.py` 与 `.impeccable/` 本地文件保持原样，未纳入本次源码基线。
