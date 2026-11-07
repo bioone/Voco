@@ -1,6 +1,14 @@
-# qwenASR 语音工作台
+# Voco
 
-Electron + React 本地桌面界面。本版支持语音合成、音频转文字和声音库；使用项目已有模型与 Python 环境。
+Voco 的新主线采用 Rust + Candle、Electron 和 TypeScript，目标是直接加载本地权重的音视频转写软件。**当前处于方案与测试素材准备阶段，Rust 推理和新版桌面软件尚未实现。**
+
+- [`main` 总计划](docs/voco-architecture.md)：模块职责、接口、当前范围、候选扩展、实施阶段与验收。
+- [推理与测试细则](docs/rust-electron-ts-plan.md)：CPU/CUDA、官方样本、质量门槛及已完成的准备验证。
+- `legacy/electron-python`：保留原工作台源码；旧软件包仍在 `release/win-unpacked/`。
+
+视频下载、文案处理、摘要等是后续候选，当前只设计接入边界。远程仓库为 [bioone/Voco](https://github.com/bioone/Voco)。
+
+以下说明适用于当前保留的 Electron + React + Python 工作台代码，支持语音合成、音频转文字和声音库，使用项目已有模型与 Python 环境；不代表 Rust 新版已经具备这些能力。
 
 ## 启动
 
